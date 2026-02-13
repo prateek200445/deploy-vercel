@@ -1,3 +1,19 @@
+
+function openMemories() {
+    document.getElementById('memoriesModal').style.display = 'block';
+}
+
+function closeMemories() {
+    document.getElementById('memoriesModal').style.display = 'none';
+}
+
+// Optional: Close modal when clicking outside modal-content
+window.onclick = function(event) {
+    var modal = document.getElementById('memoriesModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+}
 // Elements
 const envelope = document.getElementById("envelope-container");
 const letter = document.getElementById("letter-container");
@@ -69,4 +85,6 @@ yesBtn.addEventListener("click", () => {
     buttons.style.display = "none";
 
     finalText.style.display = "block";
+    // Show the memories button
+    document.getElementById("memories-btn").style.display = "inline-block";
 });

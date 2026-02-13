@@ -46,7 +46,7 @@ body {
     aspect-ratio: 3/2;
     padding: 20px 20px 0 20px;
     display: flex;
-    flex-direction: column;
+         z-index: 9999;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -127,6 +127,23 @@ display: inline-block;
     transition: transform 0.15s ease;
     cursor: default;
 }
+.memories-btn {
+     margin-top: 20px;
+     padding: 10px 20px;
+     background: #fff;
+     border: 2px solid #ff6f91;
+     border-radius: 8px;
+     font-size: 1.1em;
+     cursor: pointer;
+     font-weight: bold;
+     color: #ff6f91;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+     transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.memories-btn:hover {
+     background: #ff6f91;
+     color: #fff;
+     border-color: #ffb6b9;
 
 .final-text{
     font-size: 22px;
